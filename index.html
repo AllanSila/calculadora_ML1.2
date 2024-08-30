@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora ML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header class="icons">
+        <div class="imagens">
+            <img src="logo_infinite.png" class="img" alt="">
+            <img src="logoml.png" class="img" alt="">
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="titulo">Calculadora Precificadora </h1>
+        <div class="calculadora">
+            <form method="POST" id="formulario">
+                <label for="valor-receber">Digite seu valor de venda atual para descobrir o valor que voce deve vender no Mercado Livre:</label><br>
+                <input type="text" id="valor-receber" name="valor-receber"><br>
+                
+                <label for="opcoes">Para calcular o valor, escolha o tipo de exposição do anúncio:</label><br>
+                <select id="opcoes" name="opcoes">
+                    <option value="premium">Premium</option>
+                    <option value="classico">Clássico</option>
+                </select><br>
+                
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+        <div class="resultado" id="resultado">
+            <p class="results" ">Valor de venda atual <span id="venda_atual">value aqui</span></p> <br>
+            <p class="results">Valor de venda recomendado: <span id="valor_venda"> value aqui</span></p> <br>
+            <p class="results">Valor da comissao que sera cobrado: <span id="valor_comissao"> value aqui</span></p> <br>
+            <p class="results">Exposicao escolhida: <span id="exposicao"> value aqui</span></p> <br>
+            <p class="results">Frete cobrado: <span id="frete"> value aqui</span></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
